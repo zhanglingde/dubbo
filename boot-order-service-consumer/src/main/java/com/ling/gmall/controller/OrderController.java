@@ -18,6 +18,9 @@ public class OrderController {
     @ResponseBody
     @RequestMapping("/initOrder")
     public List<UserAddress> initOrder(String userId){
+        /**
+         * 初始化订单时，调用远程服务获取地址列表
+         */
         return orderService.initOrder(userId);
     }
 }

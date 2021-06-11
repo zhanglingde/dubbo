@@ -1,15 +1,15 @@
 package com.ling.gmall;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @EnableDubbo
 @SpringBootApplication
-public class BootOrderServiceConsumerApplication {
+public class OrderConsumerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootOrderServiceConsumerApplication.class, args);
+		SpringApplication.run(OrderConsumerApplication.class, args);
 	}
 
 }
